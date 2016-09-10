@@ -1,0 +1,188 @@
+@charset "UTF-8";
+@font-face{
+    font-family: "ubuntu-regular";
+    src: url(../fonts/ubuntu-regular.ttf);
+}
+body{
+    font-family: "ubuntu-regular";
+    font-size: 16px;
+    background-color:#F1F1F1;
+}
+a:hover{
+    text-decoration: none;
+}
+/*
+        CLASSES GLOBAIS
+*/
+.clear{clear: both;}
+.font-bold{font-weight:bold;}
+.bg-branco{
+    background: white;
+    padding: 0.625em 0;
+}
+.bg-branco{
+    background: white;
+    padding: 0.625em 0;
+}
+.bg-azul{
+    background: #0A87CC;
+    padding: 0.625em 0;
+}
+.bg-danger{
+    background: #D9534F;
+    padding: 0.3em;
+    color: white;
+}
+.float-right{float: right;}
+.float-left{float: left;}
+.img-responsive{width: 100%;}
+.img-center{display: block; margin:0 auto;}
+.ic-home, .ic-favorito, .ic-add, .ic-list, .ic-search, .ic-users, .ic-conf, .ic-confall, .ic-confslide{width: 14px; height: 14px; display: inline-block;}
+.ic-home{background: url(../imagens/icons.png) -7px -4px no-repeat;}
+.ic-favorito{background: url(../imagens/icons.png) -127px -4px no-repeat;}
+.ic-users{background: url(../imagens/icons.png) -108px -4px no-repeat;}
+.ic-conf{background: url(../imagens/icons.png) -72px -4px no-repeat;}
+.ic-add{background: url(../imagens/icons.png) -29px -4px no-repeat;}
+.ic-list{background: url(../imagens/icons.png) -144px -4px no-repeat;}
+.ic-search{background: url(../imagens/icons.png) -52px -4px no-repeat;}
+.ic-confall{background: url(../imagens/icons.png) -90px -4px no-repeat;}
+.ic-confslide{background: url(../imagens/icons.png) -163px -4px no-repeat;}
+
+/*
+        HEADER
+*/
+/*
+        Footer
+*/
+/*
+        Section's
+*/
+#wrapper {
+    padding-left: 0;
+}
+body {
+    margin-top: 100px;
+}
+
+@media(min-width:768px) {
+    body {
+        margin-top: 50px;
+    }
+}
+#page-wrapper {
+    width: 100%;
+    padding: 0;
+    background-color: #fff;
+}
+#container-login{
+    border-top: 9px solid #222222;
+    border-radius: 10px;
+    padding: 4em;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 5px #353526;
+}
+#container-login img{
+    margin-top: 20%;
+}
+
+/*
+       MENU
+*/
+.nav{
+    font-size: 14px
+}
+.top-nav {
+    padding: 0 15px;
+}
+
+.top-nav>li {
+    display: inline-block;
+    float: left;
+}
+
+.top-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 20px;
+    color: #999;
+}
+
+.top-nav>li>a:hover,
+.top-nav>li>a:focus,
+.top-nav>.open>a,
+.top-nav>.open>a:hover,
+.top-nav>.open>a:focus {
+    color: #fff;
+    background-color: #000;
+}
+
+.top-nav>.open>.dropdown-menu {
+    float: left;
+    position: absolute;
+    margin-top: 0;
+    border: 1px solid rgba(0,0,0,.15);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #fff;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+.top-nav>.open>.dropdown-menu>li>a {
+    white-space: normal;
+}
+
+
+.side-nav>li>ul {
+    padding: 0;
+}
+
+.side-nav>li>ul>li>a {
+    display: block;
+    padding: 10px 0px 10px 30px;
+    text-decoration: none;
+    color: #999;
+}
+
+.side-nav>li>ul>li>a:hover {
+    color: #fff;
+}
+/*
+       MEDIAS
+*/
+@media(max-width: 990px){
+    #container-login, #container-login img{margin-top: 0; border-radius: 0; border: none;}
+}
+@media(min-width:768px) {
+    .side-nav {
+        position: fixed;
+        top: 51px;
+        left: 225px;
+        width: 260px;
+        margin-left: -225px;
+        border: none;
+        border-radius: 0;
+        overflow-y: auto;
+        background-color: #222;
+        bottom: 0;
+        overflow-x: hidden;
+        padding-bottom: 40px;
+    }
+
+    .side-nav>li>a {
+        width: 260px;
+    }
+
+    .side-nav li a:hover,
+    .side-nav li a:focus {
+        outline: none;
+        background-color: #000 !important;
+    }
+    #wrapper {
+        padding-left: 260px;
+    }
+
+    #page-wrapper {
+        padding: 10px;
+    }
+}
