@@ -49,26 +49,26 @@
                 </ul>
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav side-nav">
-                        <li class="active">
+                        <li >
                             <a href="index.html"><span class="glyphicon glyphicon-home"></span> Inicial</a>
                         </li>
                         <li>
-                            <a href="index.html"><span class="glyphicon glyphicon-star"></span> Imóveis mais Visitados</a>
+                            <a href="imoveis-mais-visitados.html"><span class="glyphicon glyphicon-star"></span> Imóveis mais Visitados</a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="javascript:;" data-toggle="collapse" data-target="#imoveis"> <span class="glyphicon glyphicon-home"></span> IMÓVEIS <b class="caret"></b></a>
                             <ul id="imoveis" class="collapse">
                                 <li>
-                                    <a href="#"><span class="glyphicon glyphicon-plus-sign"></span> Cadastrar Novo Imóvel</a>
+                                    <a href="cadastrar-novo-imovel.html"><span class="glyphicon glyphicon-plus-sign"></span> Cadastrar Novo Imóvel</a>
                                 </li>
                                 <li>
-                                    <a href="#"><span class="glyphicon glyphicon-list"></span> Exibir Imóvel Cadastrados</a>
+                                    <a href="imoveis-cadastrados.html"><span class="glyphicon glyphicon-list"></span> Imóveis Cadastrados</a>
                                 </li>
                                 <li>
-                                    <a href="#"><span class="glyphicon glyphicon-search"></span> Pesquisar Imóveis</a>
+                                    <a href="pesquisar-imoveis.html"><span class="glyphicon glyphicon-search"></span> Pesquisar Imóveis</a>
                                 </li>
-                                <li>
-                                    <a href="#"><span class="glyphicon glyphicon-list"></span> Imóveis Ocultos</a>
+                                <li class="active">
+                                    <a href="imoveis-ocultos.html"><span class="glyphicon glyphicon-list"></span> Imóveis Ocultos</a>
                                 </li>
                             </ul>
                         </li>
@@ -106,72 +106,59 @@
             <div id="page-wrapper">
                 <div class="container-fluid">
                     <section class="row">
-                        <article class="col-md-12">
-                            <header class="page-header"><h1>Inicial</h1></header>
+                        <article class="col-md-12" id="container-breadcrumb">
+                            <header class="page-header"><h1>Imóveis Ocultos</h1></header>
                             <ol class="breadcrumb">
-                                <li class="active"><span class="glyphicon glyphicon-home"></span> Inicial</li>
+                                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Inicial</a></li>
+                                <li class="active"><span class="glyphicon glyphicon-list"></span> Imóveis Ocultos</li>
                             </ol>
+                        </article><!--fim container-breadcrumb-->
+                        <article id="container-imoveis">
+                            <!-- IMOVEL -->
+                            <article class="col-md-4">
+                                <div class="thumbnail">
+                                    <div class="dest-img">
+                                        <a href="">
+                                            <img src="imagens/casa.jpg" class="img-responsive" alt=""> 
+                                            <p class="text-center title-nome">Casa - Venda - Cod 101 	
+                                                <br>
+                                                <span class="title-endereco">Bela Vista, Itaituba - PA</span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="caption">
+                                        <ul class="list-unstyled">
+                                            <li><span class="ic-qua"></span> Quartos: 1</li>
+                                            <li><span class="ic-ba"></span> Banheiros: 2</li>
+                                            <li><span class="ic-gar"></span> Garagem: 4</li>
+                                            <li><hr></li>
+                                            <li class="text-center bg-danger"> <span class=" glyphicon glyphicon-eye-open"></span> 30 visualizações</li>
+                                            <li><hr></li>
+                                            <li><a href="#" class="btn btn-success btn-block">Editar</a></li>
+                                            <li><hr></li>
+                                            <li><a href="#" class="btn btn-danger btn-block">Excluir</a></li>
+                                            <li><hr></li>
+                                            <li><a href="#">Consulta imóvel<span class="ic-mais float-right">+</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </article><!-- FIM IMOVEL -->
 
-                        </article>
-                        <article class="col-md-12">
-                            <div class="jumbotron">
-                                <h1>Olá, Joab Torres Alencar!</h1>
-                                <p class="text-left">
-                                    Bem-vindo ao painel adminstrativo da Kanananda Negócios Imobiliários.<br/>
-                                    Imóveis cadastrados: 30 registros encontrados <br/>
-                                    Imóveis ocultos: 0 registros encontrados</p>
-                                <a href="#" class="btn btn-primary btn-lg">Página do site &raquo;</a>
+                            <div class="col-xs-12">
+                                <ul class="pagination">
+                                    <li><a href="#">&laquo;</a></li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">&raquo;</a></li>
+                                </ul>
                             </div>
                         </article>
-                        <article class="col-md-4">
-                            <div class="panel panel-primary panel-icon">
-                                <div class="panel-heading"><strong class="font-bold"><span class="glyphicon glyphicon-plus-sign float-right"></span> IMÓVEIS</strong> <br/> Cadastrar Novo Imóvel</div>
-                                <div class="panel-body">
-                                    <a href="#">Ver detalhes <span class="badge float-right">&raquo;</span></a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="col-md-4">
-                            <div class="panel panel-success panel-icon">
-                                <div class="panel-heading"><strong class="font-bold"><span class="glyphicon glyphicon-list float-right"></span> IMÓVEIS</strong> <br/> Exibir Imóvel Cadastrados </div>
-                                <div class="panel-body">
-                                    <a href="#">Ver detalhes <span class="badge float-right">&raquo;</span></a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="col-md-4">
-                            <div class="panel panel-danger panel-icon">
-                                <div class="panel-heading"><strong class="font-bold"><span class="glyphicon glyphicon-list float-right"></span> IMÓVEIS</strong> <br/> Exibir Imóveis Ocultos</div>
-                                <div class="panel-body">
-                                    <a href="#">Ver detalhes <span class="badge float-right">&raquo;</span></a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="col-md-4">
-                            <div class="panel panel-primary panel-icon">
-                                <div class="panel-heading"><strong class="font-bold"><span class="glyphicon glyphicon-plus-sign float-right"></span> USUÁRIOS</strong> <br/> Cadastrar Novo Usuário</div>
-                                <div class="panel-body">
-                                    <a href="#">Ver detalhes <span class="badge float-right">&raquo;</span></a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="col-md-4">
-                            <div class="panel panel-success panel-icon">
-                                <div class="panel-heading"><strong class="font-bold"><span class="glyphicon glyphicon-list float-right"></span> USUÁRIOS</strong> <br/> Exibir Usuários Cadastrados </div>
-                                <div class="panel-body">
-                                    <a href="#">Ver detalhes <span class="badge float-right">&raquo;</span></a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="col-md-4">
-                            <div class="panel panel-danger panel-icon">
-                                <div class="panel-heading"><strong class="font-bold"><span class="glyphicon glyphicon-wrench float-right"></span> CONFIGURAÇÕES</strong> <br/> Configurações Gerais</div>
-                                <div class="panel-body">
-                                    <a href="#">Ver detalhes <span class="badge float-right">&raquo;</span></a>
-                                </div>
-                            </div>
-                        </article>
-                    </section> <!--fim row-->
+                        <!--fim container-imoveis-->
+                    </section> 
+                    <!--fim row-->
                     <footer class="row clear" id="container-footer">
                         <div class="col-xs-12">
                             <p class="text-right">&copy; Desenvolvido por Joab Torres Alencar.</p>
