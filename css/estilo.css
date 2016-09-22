@@ -187,7 +187,7 @@ body {
 .viewFotos span{
     margin-top: 10px;
 }
-.viewFotos input[type='file'],.container-usuario input[type='file']{
+input[type='file']{
     display: none;
 }
 .container-usuario .thumbnail{

@@ -143,9 +143,9 @@ add_imagem = function () {
         figure.setAttribute("class", "viewFotos");
         p = document.createElement("p");
         p.setAttribute("class", "font-bold");
-        p.appendChild(document.createTextNode("Foto - " + qtd));
+        p.appendChild(document.createTextNode("Imagem - " + qtd));
         img = document.createElement("img");
-        img.setAttribute("src", "imagens/logo.png");
+        img.setAttribute("src", "imagens/apartamento.jpg");
         img.setAttribute("id", "viewImagem-" + qtd);
         img.setAttribute("alt", "Kananda Imobiliária");
         figcaption = document.createElement("figcaption");
@@ -173,7 +173,7 @@ add_imagem = function () {
         container.insertBefore(div, container.firstElementChild);
     } else {
         var imagem = document.getElementById("fotos");
-        imagem.innerHTML = imagem.innerHTML + '<div class="form-group col-md-4 container-foto" id="foto-1"> <figure class="viewFotos" > <p class="font-bold">Foto - 1</p><img src="imagens/logo.png" alt="Imóvel Kananda" id="viewImagem-1"/> <figcaption> <label for="cImagem-1" class="btn btn-primary btn-block ">Escolher arquivo</label> <input type="file" id="cImagem-1" class="ocultar" name="tImagem-1" onchange="readURL(this);"/> <span class="btn btn-danger btn-block" onclick="remover_foto(this);">Remover</span> </figcaption> </figure> </div>';
+        imagem.innerHTML = imagem.innerHTML + '<div class="form-group col-md-4 container-foto" id="foto-1"> <figure class="viewFotos" > <p class="font-bold">Imagem - 1</p><img src="imagens/apartamento.jpg" alt="Imóvel Kananda" id="viewImagem-1"/> <figcaption> <label for="cImagem-1" class="btn btn-primary btn-block ">Escolher arquivo</label> <input type="file" id="cImagem-1" class="ocultar" name="tImagem-1" onchange="readURL(this);"/> <span class="btn btn-danger btn-block" onclick="remover_foto(this);">Remover</span> </figcaption> </figure> </div>';
     }
     document.getElementById("qtd_fotos").value = qtd;
     document.getElementById("qnt_fotos").innerHTML = qtd;
