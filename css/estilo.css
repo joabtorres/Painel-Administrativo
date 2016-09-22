@@ -15,7 +15,9 @@ a:hover{
         CLASSES GLOBAIS
 */
 .ocultar{display: none;}
-.jumbotron{background-color:#222222; color: white;}
+.jumbotron{background-color:#337ab7; color: white;}
+.btn-dark{color: white; background-color: #222222; border: 1px solid #000;}
+.btn-dark:hover{color: #FFFFFF; background-color: #333}
 .page-header{padding-bottom: 0;}
 .clear{clear: both;}
 .font-bold{font-weight:bold;}
@@ -137,7 +139,11 @@ body {
     margin-top: 100px;
 }
 #viewMapa{
-    min-height: 400px;
+    min-height: 300px;
+}
+#viewImgUser{
+    margin-bottom: 0.312em;
+    max-height: 130px
 }
 @media(min-width:768px) {
     body {
@@ -181,8 +187,21 @@ body {
 .viewFotos span{
     margin-top: 10px;
 }
-.viewFotos input[type='file']{
+.viewFotos input[type='file'],.container-usuario input[type='file']{
     display: none;
+}
+.container-usuario .thumbnail{
+    background-color: #D9534F;
+}
+.container-usuario .thumbnail p{
+   color:white;
+}
+.container-usuario .thumbnail img{
+   margin: 0.625em auto;
+}
+.container-usuario .thumbnail figcaption{
+    background-color: white;
+    padding: 10px;
 }
 /*
     IMOVEIS

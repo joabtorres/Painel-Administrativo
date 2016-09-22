@@ -49,34 +49,34 @@
                 </ul>
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav side-nav">
-                        <li class="active">
+                        <li >
                             <a href="index.html"><span class="glyphicon glyphicon-home"></span> Inicial</a>
                         </li>
                         <li>
-                            <a href="index.html"><span class="glyphicon glyphicon-star"></span> Imóveis mais Visitados</a>
+                            <a href="imoveis-mais-visitados.html"><span class="glyphicon glyphicon-star"></span> Imóveis mais Visitados</a>
                         </li>
-                        <li>
+                        <li >
                             <a href="javascript:;" data-toggle="collapse" data-target="#imoveis"> <span class="glyphicon glyphicon-home"></span> IMÓVEIS <b class="caret"></b></a>
                             <ul id="imoveis" class="collapse">
                                 <li>
-                                    <a href="#"><span class="glyphicon glyphicon-plus-sign"></span> Cadastrar Novo Imóvel</a>
+                                    <a href="cadastrar-novo-imovel.html"><span class="glyphicon glyphicon-plus-sign"></span> Cadastrar Novo Imóvel</a>
                                 </li>
                                 <li>
-                                    <a href="#"><span class="glyphicon glyphicon-list"></span> Exibir Imóvel Cadastrados</a>
+                                    <a href="imoveis-cadastrados.html"><span class="glyphicon glyphicon-list"></span> Imóveis Cadastrados</a>
                                 </li>
                                 <li>
-                                    <a href="#"><span class="glyphicon glyphicon-search"></span> Pesquisar Imóveis</a>
+                                    <a href="pesquisar-imoveis.html"><span class="glyphicon glyphicon-search"></span> Pesquisar Imóveis</a>
                                 </li>
-                                <li>
-                                    <a href="#"><span class="glyphicon glyphicon-list"></span> Imóveis Ocultos</a>
+                                <li >
+                                    <a href="imoveis-ocultos.html"><span class="glyphicon glyphicon-list"></span> Imóveis Ocultos</a>
                                 </li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="javascript:;" data-toggle="collapse" data-target="#usuarios"><span class="glyphicon glyphicon-user"></span> USUÁRIOS <b class="caret"></b></a>
                             <ul id="usuarios" class="collapse">
-                                <li>
-                                    <a href="#"><span class="glyphicon glyphicon-plus-sign"></span> Cadastrar Novo Usuário</a>
+                                <li class="active">
+                                    <a href="cadastrar-usuario.html"><span class="glyphicon glyphicon-plus-sign"></span> Cadastrar Novo Usuário</a>
                                 </li>
                                 <li>
                                     <a href="#"><span class="glyphicon glyphicon-list"></span> Exibir Usuários Cadastrados</a>
@@ -106,72 +106,63 @@
             <div id="page-wrapper">
                 <div class="container-fluid">
                     <section class="row">
-                        <article class="col-md-12">
-                            <header class="page-header"><h1>Inicial</h1></header>
+                        <article class="col-md-12" id="container-breadcrumb">
+                            <header class="page-header"><h1>Cadastrar Novo Usuário</h1></header>
                             <ol class="breadcrumb">
-                                <li class="active"><span class="glyphicon glyphicon-home"></span> Inicial</li>
+                                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Inicial</a></li>
+                                <li class="active"><span class="glyphicon glyphicon-plus-sign"></span> Cadastrar Novo Usuário</li>
                             </ol>
+                        </article><!--fim container-breadcrumb-->
+                        <article class="container-usuario clear">
+                            <form method="POST" enctype="multipart/form-data" autocomplete="off">
+                                <section class="panel panel-primary">
+                                    <header class="panel-heading"><strong class="font-bold">DADOS GERAIS</strong></header>
+                                    <article class="panel-body">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="cNome">Nome Completo:</label>
+                                                <input type="text" name="tNome" id="cNome" class="form-control"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="cEmail">E-mail:</label>
+                                                <input type="email" name="tEmail" id="cEmail" class="form-control"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="cSenha">Senha:</label>
+                                                <input type="password" name="tSenha" id="cSenha" class="form-control"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="cRepetirSenha">Repetir Senha:</label>
+                                                <input type="password" name="tRepetirSenha" id="cRepetirSenha" class="form-control"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <strong class="font-bold">Deseja ativar este usuário?</strong><br/>
+                                                <label><input type="radio" name="tRepetirSenha" value="1" checked/> Sim</label>
+                                                <label><input type="radio" name="tRepetirSenha" value="0"/> Não</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <strong class="font-bold">Nível de Acesso:</strong><br/>
+                                                <label><input type="radio" name="tNivelDeAcesso" value="0" checked/> Usuário</label>
+                                                <label><input type="radio" name="tNivelDeAcesso" value="1"/> Administrador</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="text-center" style="margin-top: 10%;">
+                                                <img src="imagens/user.png" class="img-center" alt="Kananda" id="viewImgUser"/>
+                                                <label class="btn btn-danger" for="cFileImagem">Escolher Imagem</label>
+                                                <input type="file" name="tFileImagem" id="cFileImagem"/>
+                                            </p>
 
-                        </article>
-                        <article class="col-md-12">
-                            <div class="jumbotron">
-                                <h1>Olá, Joab Torres Alencar!</h1>
-                                <p class="text-left">
-                                    Bem-vindo ao painel adminstrativo da Kanananda Negócios Imobiliários.<br/>
-                                    Imóveis cadastrados: 30 registros encontrados <br/>
-                                    Imóveis ocultos: 0 registros encontrados</p>
-                                <a href="#" class="btn btn-dark btn-lg">Página do site &raquo;</a>
-                            </div>
-                        </article>
-                        <article class="col-md-4">
-                            <div class="panel panel-primary panel-icon">
-                                <div class="panel-heading"><strong class="font-bold"><span class="glyphicon glyphicon-plus-sign float-right"></span> IMÓVEIS</strong> <br/> Cadastrar Novo Imóvel</div>
-                                <div class="panel-body">
-                                    <a href="#">Ver detalhes <span class="badge float-right">&raquo;</span></a>
+                                        </div>
+                                    </article>
+                                </section>
+                                <div  class="form-group">
+                                    <button type="button" class="btn btn-primary btn-lg">Salvar</button>
                                 </div>
-                            </div>
-                        </article>
-                        <article class="col-md-4">
-                            <div class="panel panel-success panel-icon">
-                                <div class="panel-heading"><strong class="font-bold"><span class="glyphicon glyphicon-list float-right"></span> IMÓVEIS</strong> <br/> Exibir Imóvel Cadastrados </div>
-                                <div class="panel-body">
-                                    <a href="#">Ver detalhes <span class="badge float-right">&raquo;</span></a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="col-md-4">
-                            <div class="panel panel-danger panel-icon">
-                                <div class="panel-heading"><strong class="font-bold"><span class="glyphicon glyphicon-list float-right"></span> IMÓVEIS</strong> <br/> Exibir Imóveis Ocultos</div>
-                                <div class="panel-body">
-                                    <a href="#">Ver detalhes <span class="badge float-right">&raquo;</span></a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="col-md-4">
-                            <div class="panel panel-primary panel-icon">
-                                <div class="panel-heading"><strong class="font-bold"><span class="glyphicon glyphicon-plus-sign float-right"></span> USUÁRIOS</strong> <br/> Cadastrar Novo Usuário</div>
-                                <div class="panel-body">
-                                    <a href="#">Ver detalhes <span class="badge float-right">&raquo;</span></a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="col-md-4">
-                            <div class="panel panel-success panel-icon">
-                                <div class="panel-heading"><strong class="font-bold"><span class="glyphicon glyphicon-list float-right"></span> USUÁRIOS</strong> <br/> Exibir Usuários Cadastrados </div>
-                                <div class="panel-body">
-                                    <a href="#">Ver detalhes <span class="badge float-right">&raquo;</span></a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="col-md-4">
-                            <div class="panel panel-danger panel-icon">
-                                <div class="panel-heading"><strong class="font-bold"><span class="glyphicon glyphicon-wrench float-right"></span> CONFIGURAÇÕES</strong> <br/> Configurações Gerais</div>
-                                <div class="panel-body">
-                                    <a href="#">Ver detalhes <span class="badge float-right">&raquo;</span></a>
-                                </div>
-                            </div>
-                        </article>
-                    </section> <!--fim row-->
+                            </form>
+                        </article><!--FIM CONTAINER-USUARIO-->
+                    </section> 
+                    <!--fim row-->
                     <footer class="row clear" id="container-footer">
                         <div class="col-xs-12">
                             <p class="text-right">&copy; Desenvolvido por Joab Torres Alencar.</p>
@@ -188,6 +179,6 @@
         <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
         <script src="js/jquery.js"></script>
         <!-- Inclui todos os plugins compilados (abaixo), ou inclua arquivos separadados se necessário -->
-        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>       
     </body>
 </html>
