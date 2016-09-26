@@ -31,18 +31,18 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html">Kananda</a>
+                    <a class="navbar-brand font-bold" href="index.html">Kananda Negócios Imobiliários</a>
                 </div>
                 <ul class="nav navbar-right top-nav">
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <span class="glyphicon glyphicon-user"></span> Joab Torres Alencar <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="#"> <span class="glyphicon glyphicon-user"></span> Alterar</a>
+                                <a href="cadastrar-usuario.html"> <span class="glyphicon glyphicon-user"></span> Alterar</a>
                             </li>
                             <li class="divider"></li>
                             <li>
-                                <a href="#"> <span class="glyphicon glyphicon-off"></span> Sair</a>
+                                <a href="login.html"> <span class="glyphicon glyphicon-off"></span> Sair</a>
                             </li>
                         </ul>
                     </li>
@@ -62,13 +62,13 @@
                                     <a href="cadastrar-novo-imovel.html"><span class="glyphicon glyphicon-plus-sign"></span> Cadastrar Novo Imóvel</a>
                                 </li>
                                 <li>
-                                    <a href="imoveis-cadastrados.html"><span class="glyphicon glyphicon-list"></span> Imóveis Cadastrados</a>
+                                    <a href="imoveis-cadastrados.html"><span class="glyphicon glyphicon-list"></span> Exibir Imóvel Cadastrados</a>
                                 </li>
                                 <li>
-                                    <a href="#"><span class="glyphicon glyphicon-search"></span> Pesquisar Imóveis</a>
+                                    <a href="pesquisar-imoveis.html"><span class="glyphicon glyphicon-search"></span> Pesquisar Imóveis</a>
                                 </li>
                                 <li>
-                                    <a href="#"><span class="glyphicon glyphicon-list"></span> Imóveis Ocultos</a>
+                                    <a href="imoveis-ocultos.html"><span class="glyphicon glyphicon-list"></span> Imóveis Ocultos</a>
                                 </li>
                             </ul>
                         </li>
@@ -76,13 +76,13 @@
                             <a href="javascript:;" data-toggle="collapse" data-target="#usuarios"><span class="glyphicon glyphicon-user"></span> USUÁRIOS <b class="caret"></b></a>
                             <ul id="usuarios" class="collapse">
                                 <li>
-                                    <a href="#"><span class="glyphicon glyphicon-plus-sign"></span> Cadastrar Novo Usuário</a>
+                                    <a href="cadastrar-usuario.html"><span class="glyphicon glyphicon-plus-sign"></span> Cadastrar Novo Usuário</a>
                                 </li>
                                 <li>
-                                    <a href="#"><span class="glyphicon glyphicon-list"></span> Exibir Usuários Cadastrados</a>
+                                    <a href="usuarios-cadastrados.html"><span class="glyphicon glyphicon-list"></span> Exibir Usuários Cadastrados</a>
                                 </li>
                                 <li>
-                                    <a href="#"><span class="glyphicon glyphicon-search"></span> Pesquisar usuários</a>
+                                    <a href="pesquisar-usuarios.html"><span class="glyphicon glyphicon-search"></span> Pesquisar usuários</a>
                                 </li>
                             </ul>
                         </li>
@@ -90,10 +90,10 @@
                             <a href="javascript:;" data-toggle="collapse" data-target="#configuracoes"><span class=" glyphicon glyphicon-cog"></span> CONFIGURAÇÕES <b class="caret"></b></a>
                             <ul id="configuracoes" class="collapse">
                                 <li>
-                                    <a href="#"><span class=" glyphicon glyphicon-wrench"></span> Configurações Gerais</a>
+                                    <a href="configuracoes-gerais.html"><span class=" glyphicon glyphicon-wrench"></span> Configurações Gerais</a>
                                 </li>
                                 <li>
-                                    <a href="#"><span class="glyphicon glyphicon-picture"></span> Configurações Slideshow</a>
+                                    <a href="configuracoes-slideshow.html"><span class="glyphicon glyphicon-picture"></span> Configurações Slideshow</a>
                                 </li>
                             </ul>
                         </li>
@@ -104,29 +104,29 @@
             </nav>
 
             <div id="page-wrapper">
-                <div class="container-fluid">
-                    <section class="row">
-                        <article class="col-md-12" id="container-breadcrumb">
-                            <header class="page-header"><h1>Imóveis Cadastrados <small>(ativos e ocultos)</small></h1></header>
+                <section class="container-fluid">
+                    <div class="row">
+                        <header class="col-md-12" id="container-breadcrumb">
+                            <h1 class="page-header">Imóveis Cadastrados</h1>
                             <ol class="breadcrumb">
                                 <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Inicial</a></li>
                                 <li class="active"><span class="glyphicon glyphicon-list"></span> Imóveis Cadastrados</li>
                             </ol>
-                        </article><!--fim container-breadcrumb-->
+                        </header><!--fim container-breadcrumb-->
                         <article id="container-imoveis">
                             <!-- IMOVEL -->
-                            <article class="col-md-4">
-                                <div class="thumbnail">
-                                    <div class="dest-img">
+                            <section class="col-md-4">
+                                <article class="thumbnail">
+                                    <header class="dest-img">
                                         <a href="">
-                                            <img src="imagens/casa.jpg" class="img-responsive" alt=""> 
+                                            <img src="imagens/casa.jpg" class="img-responsive" alt="Imóvel Kananda"> 
                                             <p class="text-center title-nome">Casa - Venda - Cod 101 	
                                                 <br>
                                                 <span class="title-endereco">Bela Vista, Itaituba - PA</span>
                                             </p>
                                         </a>
-                                    </div>
-                                    <div class="caption">
+                                    </header>
+                                    <footer class="caption">
                                         <ul class="list-unstyled">
                                             <li><span class="ic-qua"></span> Quartos: 1</li>
                                             <li><span class="ic-ba"></span> Banheiros: 2</li>
@@ -140,9 +140,9 @@
                                             <li><hr></li>
                                             <li><a href="#">Consulta imóvel<span class="ic-mais float-right">+</span></a></li>
                                         </ul>
-                                    </div>
-                                </div>
-                            </article><!-- FIM IMOVEL -->
+                                    </footer>
+                                </article>
+                            </section><!-- FIM IMOVEL -->
 
                             <div class="col-xs-12">
                                 <ul class="pagination">
@@ -157,14 +157,16 @@
                             </div>
                         </article>
                         <!--fim container-imoveis-->
-                    </section> 
+                    </div> 
                     <!--fim row-->
+
                     <footer class="row clear" id="container-footer">
                         <div class="col-xs-12">
                             <p class="text-right">&copy; Desenvolvido por Joab Torres Alencar.</p>
                         </div>
-                    </footer>
-                </div>
+                    </footer><!--fim footer e row -->
+
+                </section>
             </div>
             <!-- /#page-wrapper -->
 
@@ -176,5 +178,6 @@
         <script src="js/jquery.js"></script>
         <!-- Inclui todos os plugins compilados (abaixo), ou inclua arquivos separadados se necessário -->
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/painel_admin.js"></script>
     </body>
 </html>

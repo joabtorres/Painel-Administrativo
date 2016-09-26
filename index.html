@@ -31,18 +31,18 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html">Kananda</a>
+                    <a class="navbar-brand font-bold" href="index.html">Kananda Negócios Imobiliários</a>
                 </div>
                 <ul class="nav navbar-right top-nav">
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <span class="glyphicon glyphicon-user"></span> Joab Torres Alencar <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="#"> <span class="glyphicon glyphicon-user"></span> Alterar</a>
+                                <a href="cadastrar-usuario.html"> <span class="glyphicon glyphicon-user"></span> Alterar</a>
                             </li>
                             <li class="divider"></li>
                             <li>
-                                <a href="#"> <span class="glyphicon glyphicon-off"></span> Sair</a>
+                                <a href="login.html"> <span class="glyphicon glyphicon-off"></span> Sair</a>
                             </li>
                         </ul>
                     </li>
@@ -53,22 +53,22 @@
                             <a href="index.html"><span class="glyphicon glyphicon-home"></span> Inicial</a>
                         </li>
                         <li>
-                            <a href="index.html"><span class="glyphicon glyphicon-star"></span> Imóveis mais Visitados</a>
+                            <a href="imoveis-mais-visitados.html"><span class="glyphicon glyphicon-star"></span> Imóveis mais Visitados</a>
                         </li>
                         <li>
                             <a href="javascript:;" data-toggle="collapse" data-target="#imoveis"> <span class="glyphicon glyphicon-home"></span> IMÓVEIS <b class="caret"></b></a>
                             <ul id="imoveis" class="collapse">
                                 <li>
-                                    <a href="#"><span class="glyphicon glyphicon-plus-sign"></span> Cadastrar Novo Imóvel</a>
+                                    <a href="cadastrar-novo-imovel.html"><span class="glyphicon glyphicon-plus-sign"></span> Cadastrar Novo Imóvel</a>
                                 </li>
                                 <li>
-                                    <a href="#"><span class="glyphicon glyphicon-list"></span> Exibir Imóvel Cadastrados</a>
+                                    <a href="imoveis-cadastrados.html"><span class="glyphicon glyphicon-list"></span> Exibir Imóvel Cadastrados</a>
                                 </li>
                                 <li>
-                                    <a href="#"><span class="glyphicon glyphicon-search"></span> Pesquisar Imóveis</a>
+                                    <a href="pesquisar-imoveis.html"><span class="glyphicon glyphicon-search"></span> Pesquisar Imóveis</a>
                                 </li>
                                 <li>
-                                    <a href="#"><span class="glyphicon glyphicon-list"></span> Imóveis Ocultos</a>
+                                    <a href="imoveis-ocultos.html"><span class="glyphicon glyphicon-list"></span> Imóveis Ocultos</a>
                                 </li>
                             </ul>
                         </li>
@@ -76,13 +76,13 @@
                             <a href="javascript:;" data-toggle="collapse" data-target="#usuarios"><span class="glyphicon glyphicon-user"></span> USUÁRIOS <b class="caret"></b></a>
                             <ul id="usuarios" class="collapse">
                                 <li>
-                                    <a href="#"><span class="glyphicon glyphicon-plus-sign"></span> Cadastrar Novo Usuário</a>
+                                    <a href="cadastrar-usuario.html"><span class="glyphicon glyphicon-plus-sign"></span> Cadastrar Novo Usuário</a>
                                 </li>
                                 <li>
-                                    <a href="#"><span class="glyphicon glyphicon-list"></span> Exibir Usuários Cadastrados</a>
+                                    <a href="usuarios-cadastrados.html"><span class="glyphicon glyphicon-list"></span> Exibir Usuários Cadastrados</a>
                                 </li>
                                 <li>
-                                    <a href="#"><span class="glyphicon glyphicon-search"></span> Pesquisar usuários</a>
+                                    <a href="pesquisar-usuarios.html"><span class="glyphicon glyphicon-search"></span> Pesquisar usuários</a>
                                 </li>
                             </ul>
                         </li>
@@ -90,10 +90,10 @@
                             <a href="javascript:;" data-toggle="collapse" data-target="#configuracoes"><span class=" glyphicon glyphicon-cog"></span> CONFIGURAÇÕES <b class="caret"></b></a>
                             <ul id="configuracoes" class="collapse">
                                 <li>
-                                    <a href="#"><span class=" glyphicon glyphicon-wrench"></span> Configurações Gerais</a>
+                                    <a href="configuracoes-gerais.html"><span class=" glyphicon glyphicon-wrench"></span> Configurações Gerais</a>
                                 </li>
                                 <li>
-                                    <a href="#"><span class="glyphicon glyphicon-picture"></span> Configurações Slideshow</a>
+                                    <a href="configuracoes-slideshow.html"><span class="glyphicon glyphicon-picture"></span> Configurações Slideshow</a>
                                 </li>
                             </ul>
                         </li>
@@ -104,80 +104,82 @@
             </nav>
 
             <div id="page-wrapper">
-                <div class="container-fluid">
-                    <section class="row">
-                        <article class="col-md-12">
-                            <header class="page-header"><h1>Inicial</h1></header>
+                <section class="container-fluid">
+                    <div class="row">
+                        <header class="col-md-12">
+                            <h1 class="page-header">Inicial</h1>
                             <ol class="breadcrumb">
                                 <li class="active"><span class="glyphicon glyphicon-home"></span> Inicial</li>
                             </ol>
-
-                        </article>
-                        <article class="col-md-12">
-                            <div class="jumbotron">
+                        </header>
+                        <section class="col-md-12">
+                            <article class="jumbotron">
                                 <h1>Olá, Joab Torres Alencar!</h1>
                                 <p class="text-left">
                                     Bem-vindo ao painel adminstrativo da Kanananda Negócios Imobiliários.<br/>
                                     Imóveis cadastrados: 30 registros encontrados <br/>
                                     Imóveis ocultos: 0 registros encontrados</p>
-                                <a href="#" class="btn btn-dark btn-lg">Página do site &raquo;</a>
-                            </div>
+                                <a href="/" class="btn btn-dark btn-lg">Página do site &raquo;</a>
+                            </article>
+                        </section>
+                        <article class="col-md-4">
+                            <section class="panel panel-primary panel-icon">
+                                <header class="panel-heading"><strong class="font-bold"><span class="glyphicon glyphicon-plus-sign float-right"></span> IMÓVEIS</strong> <br/> Cadastrar Novo Imóvel</header>
+                                <article class="panel-body">
+                                    <a href="cadastrar-novo-imovel.html">Ver detalhes <span class="badge float-right">&raquo;</span></a>
+                                </article>
+                            </section>
                         </article>
                         <article class="col-md-4">
-                            <div class="panel panel-primary panel-icon">
-                                <div class="panel-heading"><strong class="font-bold"><span class="glyphicon glyphicon-plus-sign float-right"></span> IMÓVEIS</strong> <br/> Cadastrar Novo Imóvel</div>
-                                <div class="panel-body">
-                                    <a href="#">Ver detalhes <span class="badge float-right">&raquo;</span></a>
-                                </div>
-                            </div>
+                            <section class="panel panel-success panel-icon">
+                                <header class="panel-heading"><strong class="font-bold"><span class="glyphicon glyphicon-list float-right"></span> IMÓVEIS</strong> <br/> Exibir Imóvel Cadastrados </header>
+                                <article class="panel-body">
+                                    <a href="imoveis-cadastrados.html">Ver detalhes <span class="badge float-right">&raquo;</span></a>
+                                </article>
+                            </section>
                         </article>
                         <article class="col-md-4">
-                            <div class="panel panel-success panel-icon">
-                                <div class="panel-heading"><strong class="font-bold"><span class="glyphicon glyphicon-list float-right"></span> IMÓVEIS</strong> <br/> Exibir Imóvel Cadastrados </div>
-                                <div class="panel-body">
-                                    <a href="#">Ver detalhes <span class="badge float-right">&raquo;</span></a>
-                                </div>
-                            </div>
+                            <section class="panel panel-danger panel-icon">
+                                <header class="panel-heading"><strong class="font-bold"><span class="glyphicon glyphicon-list float-right"></span> IMÓVEIS</strong> <br/> Exibir Imóveis Ocultos</header>
+                                <article class="panel-body">
+                                    <a href="imoveis-ocultos.html">Ver detalhes <span class="badge float-right">&raquo;</span></a>
+                                </article>
+                            </section>
                         </article>
                         <article class="col-md-4">
-                            <div class="panel panel-danger panel-icon">
-                                <div class="panel-heading"><strong class="font-bold"><span class="glyphicon glyphicon-list float-right"></span> IMÓVEIS</strong> <br/> Exibir Imóveis Ocultos</div>
-                                <div class="panel-body">
-                                    <a href="#">Ver detalhes <span class="badge float-right">&raquo;</span></a>
-                                </div>
-                            </div>
+                            <section class="panel panel-primary panel-icon">
+                                <header class="panel-heading"><strong class="font-bold"><span class="glyphicon glyphicon-plus-sign float-right"></span> USUÁRIOS</strong> <br/> Cadastrar Novo Usuário</header>
+                                <article class="panel-body">
+                                    <a href="cadastrar-usuario.html">Ver detalhes <span class="badge float-right">&raquo;</span></a>
+                                </article>
+                            </section>
                         </article>
                         <article class="col-md-4">
-                            <div class="panel panel-primary panel-icon">
-                                <div class="panel-heading"><strong class="font-bold"><span class="glyphicon glyphicon-plus-sign float-right"></span> USUÁRIOS</strong> <br/> Cadastrar Novo Usuário</div>
-                                <div class="panel-body">
-                                    <a href="#">Ver detalhes <span class="badge float-right">&raquo;</span></a>
-                                </div>
-                            </div>
+                            <section class="panel panel-success panel-icon">
+                                <header class="panel-heading"><strong class="font-bold"><span class="glyphicon glyphicon-list float-right"></span> USUÁRIOS</strong> <br/> Exibir Usuários Cadastrados </header>
+                                <article class="panel-body">
+                                    <a href="usuarios-cadastrados.html">Ver detalhes <span class="badge float-right">&raquo;</span></a>
+                                </article>
+                            </section>
                         </article>
                         <article class="col-md-4">
-                            <div class="panel panel-success panel-icon">
-                                <div class="panel-heading"><strong class="font-bold"><span class="glyphicon glyphicon-list float-right"></span> USUÁRIOS</strong> <br/> Exibir Usuários Cadastrados </div>
-                                <div class="panel-body">
-                                    <a href="#">Ver detalhes <span class="badge float-right">&raquo;</span></a>
-                                </div>
-                            </div>
+                            <section class="panel panel-danger panel-icon">
+                                <header class="panel-heading"><strong class="font-bold"><span class="glyphicon glyphicon-wrench float-right"></span> CONFIGURAÇÕES</strong> <br/> Configurações Gerais</header>
+                                <article class="panel-body">
+                                    <a href="configuracoes-gerais.html">Ver detalhes <span class="badge float-right">&raquo;</span></a>
+                                </article>
+                            </section>
                         </article>
-                        <article class="col-md-4">
-                            <div class="panel panel-danger panel-icon">
-                                <div class="panel-heading"><strong class="font-bold"><span class="glyphicon glyphicon-wrench float-right"></span> CONFIGURAÇÕES</strong> <br/> Configurações Gerais</div>
-                                <div class="panel-body">
-                                    <a href="#">Ver detalhes <span class="badge float-right">&raquo;</span></a>
-                                </div>
-                            </div>
-                        </article>
-                    </section> <!--fim row-->
+                    </div> <!--fim row-->
+                    
+                    
                     <footer class="row clear" id="container-footer">
                         <div class="col-xs-12">
                             <p class="text-right">&copy; Desenvolvido por Joab Torres Alencar.</p>
                         </div>
-                    </footer>
-                </div>
+                    </footer><!--fim footer e row -->
+                    
+                </section>
             </div>
             <!-- /#page-wrapper -->
 
@@ -189,5 +191,6 @@
         <script src="js/jquery.js"></script>
         <!-- Inclui todos os plugins compilados (abaixo), ou inclua arquivos separadados se necessário -->
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/painel_admin.js"></script>
     </body>
 </html>
